@@ -58,7 +58,7 @@ export default function HoverBubble({
               delay: delay
             }}
           >
-            <div className="bg-white border border-[#2CE609] rounded-2xl p-4 shadow-lg min-w-64 max-w-md">
+            <div className="bg-white border border-[#0B23FF] rounded-2xl p-4 shadow-lg min-w-64 max-w-md">
               {bubbleContent}
             </div>
           </motion.div>
