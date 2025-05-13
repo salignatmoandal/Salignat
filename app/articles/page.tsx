@@ -36,7 +36,7 @@ export default function ArticlesPage() {
         <Clock className="mb-20 self-center" />
         <Navbar className="mb-20 self-center" />
         
-        <h1 className=" inline-block  w-fit px-4 py-2  text-2xl  text-[#0B23FF] mb-8 font-semibold italic  border-2 border-[#0B23FF] rounded-3xl">Articles</h1>
+        {/* <h1 className=" inline-block  w-fit px-4 py-2  text-2xl  text-[#0B23FF] mb-8 font-semibold italic  border-2 border-[#0B23FF] rounded-3xl">Articles</h1> */}
         
         <div className="flex flex-col gap-8">
           {articles.map((article, index) => (

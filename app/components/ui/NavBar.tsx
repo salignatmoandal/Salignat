@@ -1,7 +1,8 @@
 'use client';                    // nécessaire dans l'« app » dir de Next 13+
 
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
 
 interface NavbarProps {
@@ -12,11 +13,13 @@ const links = [
   { label: 'Articles', href: '/articles' },
   { label: 'Notes',    href: '/note'    },
   { label: 'About',    href: '/'    },
+
 ];
 
 export default function Navbar({ className = '' }: NavbarProps) {
   const navRef       = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLSpanElement>(null);
+  const pathname     = usePathname();
 
   // Animation d'apparition des liens au chargement
   useEffect(() => {
@@ -45,12 +48,15 @@ export default function Navbar({ className = '' }: NavbarProps) {
     });
   };
 
+  // Filtrer les liens pour exclure la page courante
+  const filteredLinks = links.filter(link => link.href !== pathname);
+
   return (
     <nav
       ref={navRef}
       className={`relative flex justify-center gap-8 py-2 text-sm font-medium tracking-widest uppercase ${className}`}
     >
-      {links.map(({ label, href }) => (
+      {filteredLinks.map(({ label, href }) => (
         <Link
           key={href}
           href={href}
