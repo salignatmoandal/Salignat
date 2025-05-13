@@ -9,11 +9,9 @@ interface NavbarProps {
 }
 
 const links = [
-  { label: 'Articles', href: '#articles' },
-  { label: 'Notes',    href: '#notes'    },
-  { label: 'Finds',    href: '#finds'    },
-  { label: 'Uses',     href: '#uses'     },
-  { label: 'Contact',  href: '#contact'  },
+  { label: 'Articles', href: '/articles' },
+  { label: 'Notes',    href: '/note'    },
+  { label: 'About',    href: '/'    },
 ];
 
 export default function Navbar({ className = '' }: NavbarProps) {
