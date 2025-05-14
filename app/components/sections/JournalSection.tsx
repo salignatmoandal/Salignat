@@ -7,13 +7,13 @@ export default function JournalSection() {
       <h2 className="text-xl text-gray-500 font-semibold uppercase">Journal</h2>
       <div className="text-gray-400 text-sm text-justify leading-relaxed flex items-center gap-2">
         <BadgeNew />
-        <span>Currently, I'm building</span>
+        <span className="text-muted-foreground" text-base>Currently, I'm building</span>
         <div>
           <LinkPreview
             url="https://noodl.world"
             className="underline font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-[#0B23FF] isStatic"
           >
-            Noodl
+          Noodl
           </LinkPreview>
         </div>
       </div>

@@ -10,23 +10,39 @@ interface Article {
   description: string
   date: string
   slug: string
+  content: string
 }
 
 // Données d'exemple (à remplacer par vos vraies données)
 const articles: Article[] = [
   {
-    title: "Design Engineering meets LLMs",
-    description: "Comment j'utilise les LLMs pour créer des expériences plus naturelles et puissantes.",
-    date: "2024-03-20",
+    title: "AI Inference in Distributed Systems",
+    description: "",
+    content: "AI inference is the process of using a trained machine learning (ML) model to make predictions or generate outputs based on new input data. Unlike training where the model learns patterns from a dataset, inference applies the learned patterns to real-world data. ",
+    date: "2025-05-14",
     slug: "design-engineering-meets-llms"
   },
   {
-    title: "Foundations for a Fluid, AI-Augmented Mind-Mapping System",
-    description: "Creative thinking is nonlinear, associative, and often emergent. Yet most tools constrain us to rigid lists, boxes, and outlines. NOODL proposes an alternative: a graph-based interface where ideas grow as interconnected nodes, mirroring how the mind actually works. Rooted in graph theory, NOODL treats ideas as vertices and relationships as edges, allowing concepts to branch, loop, and recombine. This reflects the nature of real-world cognition — not sequential, but relational. Inspired by distributed cognition, NOODL becomes more than a canvas. It acts as an external extension of thought, where interaction with the system reshapes the direction of the idea itself. Creative flow demands flexibility. NOODL enables associative leaps, visual clusters, and spatial meaning, supporting ideation as it unfolds — not as it is planned. With semantic insights, NOODL can even suggest hidden links, surfacing paths between distant concepts and prompting novel associations. The result is a tool that doesn’t just store thought — it thinks with you. By blending graph logic, cognitive science, and generative interaction, NOODL offers a new vision: not digital organization, but cognitive amplification. Not a tool to contain ideas, but a space to discover what you could never see alone.",
-    date: "2024-03-15",
+    title: "Building Blockchain Basic Prototype",
+    description: "",
+    content: "Blocks that store valuable information. For instance, Bitcoin blocks store transactions, the essence of any cryptocurrency. Beside this, a block contains some technical information, like its version, current timestamp and the hash of the previous block. ",
+    date: "2025-05-12",
     slug: "article-1"
   },
-  // Ajoutez d'autres articles ici
+  {
+    title: "Understanding AWS SQS and EC2 Scaling",
+    description: "AWS SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It ensures the delivery of messages between software components at any volume without losing messages or requiring other services to be available.",
+    content: "",
+    date: "2025-05-06",
+    slug: "article-1"
+  },
+  {
+    title: "The Book of Shaders",
+    description: "A great resource for learning about shaders and lighting in a visually interactive and approachable manner.",
+    content: "",
+    date: "2025-05-03",
+    slug: "article-1"
+  }
 ]
 
 export default function ArticlesPage() {
@@ -45,7 +61,7 @@ export default function ArticlesPage() {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-4">
                     <span className="text-lg text-gray-500 font-mono">
-                      {new Date(article.date).toLocaleDateString('fr-FR', {
+                      {new Date(article.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric'
@@ -60,7 +76,13 @@ export default function ArticlesPage() {
                   
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {article.description}
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                    {article.content}
                   </p>
+                   
+                  </p>
+                  
+                  
                 </div>
               </article>
               

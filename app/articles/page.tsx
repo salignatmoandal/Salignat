@@ -33,7 +33,7 @@ const articles: Article[] = [
     slug: "article-1"
   },
   {
-    title: "Design Engineering meets LLMs",
+    title: "AI Inference in Distributed Systems",
     excerpt: "How I use LLMs to create more natural and powerful experiences.",
     description: `
       <div class="space-y-6">

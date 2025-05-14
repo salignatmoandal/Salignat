@@ -4,6 +4,8 @@ import "./globals.css";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import NavBar from "@/app/components/ui/NavBar";
 import Clock from "./components/Clock";
+import PageTransition from "./components/animations/PageTransition";
+import PageTransitionWrapper from "./components/animations/PageTransition";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,14 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body
-      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-        {children}
-        <SmoothCursor />
+        <PageTransitionWrapper>
+          {children}
+          <SmoothCursor />
+        </PageTransitionWrapper>
       </body>
     </html>
   );
