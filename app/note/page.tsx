@@ -44,7 +44,7 @@ export default function ArticlesPage() {
               <article className="group">
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-4">
-                    <span className="text-sm text-gray-500 font-mono">
+                    <span className="text-lg text-gray-500 font-mono">
                       {new Date(article.date).toLocaleDateString('fr-FR', {
                         year: 'numeric',
                         month: 'long',
