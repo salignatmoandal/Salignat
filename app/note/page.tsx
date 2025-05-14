@@ -21,10 +21,10 @@ const articles: Article[] = [
     slug: "design-engineering-meets-llms"
   },
   {
-    title: "Building Noodl",
-    description: "Processus of building Noodl is a mind mapping tool powered by AI.",
+    title: "Foundations for a Fluid, AI-Augmented Mind-Mapping System",
+    description: "Creative thinking is nonlinear, associative, and often emergent. Yet most tools constrain us to rigid lists, boxes, and outlines. NOODL proposes an alternative: a graph-based interface where ideas grow as interconnected nodes, mirroring how the mind actually works. Rooted in graph theory, NOODL treats ideas as vertices and relationships as edges, allowing concepts to branch, loop, and recombine. This reflects the nature of real-world cognition — not sequential, but relational. Inspired by distributed cognition, NOODL becomes more than a canvas. It acts as an external extension of thought, where interaction with the system reshapes the direction of the idea itself. Creative flow demands flexibility. NOODL enables associative leaps, visual clusters, and spatial meaning, supporting ideation as it unfolds — not as it is planned. With semantic insights, NOODL can even suggest hidden links, surfacing paths between distant concepts and prompting novel associations. The result is a tool that doesn’t just store thought — it thinks with you. By blending graph logic, cognitive science, and generative interaction, NOODL offers a new vision: not digital organization, but cognitive amplification. Not a tool to contain ideas, but a space to discover what you could never see alone.",
     date: "2024-03-15",
-    slug: "building-noodl"
+    slug: "article-1"
   },
   // Ajoutez d'autres articles ici
 ]
@@ -36,7 +36,7 @@ export default function ArticlesPage() {
         <Clock className="mb-20 self-center" />
         <Navbar className="mb-20 self-center" />
         
-        <h1 className="text-2xl text-left text-[#0B23FF] mb-8">Notes</h1>
+        {/* <h1 className="text-2xl text-left text-[#0B23FF] mb-8">Notes</h1> */}
         
         <div className="flex flex-col gap-8">
           {articles.map((article, index) => (

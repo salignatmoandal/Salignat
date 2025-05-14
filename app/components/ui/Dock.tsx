@@ -1,0 +1,46 @@
+'use client'
+
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+
+const socialLinks = [
+  {
+    name: 'GitHub',
+    icon: <FaGithub size={20} />,
+    url: 'https://github.com/tonprofil',
+  },
+  {
+    name: 'Twitter',
+    icon: <FaTwitter size={20} />,
+    url: 'https://twitter.com/tonprofil',
+  },
+  {
+    name: 'LinkedIn',
+    icon: <FaLinkedin size={20} />,
+    url: 'https://linkedin.com/in/tonprofil',
+  },
+]
+
+export default function Dock() {
+  return (
+    <div className="fixed bottom-6 left-6 z-50">
+      <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/20">
+        {socialLinks.map((link, index) => (
+          <motion.a
+            key={link.name}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1, type: 'spring', stiffness: 300 }}
+            whileHover={{ scale: 1.15 }}
+            className="text-white hover:text-[#0B23FF] transition-colors"
+          >
+            {link.icon}
+          </motion.a>
+        ))}
+      </div>
+    </div>
+  )
+}
