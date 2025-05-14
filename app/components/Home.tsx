@@ -3,6 +3,7 @@ import { BadgeNew } from "./ui/BadgeNew";
 import HoverBubble from "./ui/HoverBubble";
 import Navbar from "./ui/NavBar";
 import Clock from "./Clock";
+import Dock from "./ui/Dock";
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
@@ -72,6 +73,7 @@ export default function Home() {
           <h2 className="text-sm text-gray-500 font-semibold uppercase">Discuss</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
             Get in touch with me at <span className="underline text-[#0B23FF]">mwnslg@gmail.com</span>.
+            <Dock />
           </p>
         </div>
       </div>

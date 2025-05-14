@@ -7,17 +7,18 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: <FaGithub size={20} />,
-    url: 'https://github.com/tonprofil',
+    url: 'https://github.com/salignatmoandal',
+    // ',
   },
   {
     name: 'Twitter',
     icon: <FaTwitter size={20} />,
-    url: 'https://twitter.com/tonprofil',
+    url: 'https://x.com/tracyulme',
   },
   {
     name: 'LinkedIn',
     icon: <FaLinkedin size={20} />,
-    url: 'https://linkedin.com/in/tonprofil',
+    url: 'https://www.linkedin.com/in/mawen-salignat-moandal-20943b1ab/',
   },
 ]
 
@@ -35,7 +36,7 @@ export default function Dock() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1, type: 'spring', stiffness: 300 }}
             whileHover={{ scale: 1.15 }}
-            className="text-white hover:text-[#0B23FF] transition-colors"
+            className="text-[#0B23FF] hover:text-[#0B23FF] transition-colors"
           >
             {link.icon}
           </motion.a>
