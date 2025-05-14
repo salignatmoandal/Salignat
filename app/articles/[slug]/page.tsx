@@ -24,7 +24,7 @@ export default function ArticlePage() {
 
   return (
     <main className="min-h-screen px-6 py-12 bg-[var(--background)]">
-       <div className="text-sm text-gray-500 font-mono">
+       <div className="text-sm text-muted-foreground font-mono">
           {new Date(article.date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
@@ -45,17 +45,18 @@ export default function ArticlePage() {
 
         {article.sections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="space-y-2">
-            <h2 className="text-xl text-[#0B23FF] font-semibold">
+            <h2 className="text-xl italic text-[#0B23FF] font-semibold">
               {section.title}
             </h2>
 
-            <div className="space-y-5 text-justify leading-relaxed">
+            <div className="space-y-2  text-justify leading-relaxed">
               {section.parts?.map((part, partIndex) => (
                 <AnimatedArticleSection
                   key={partIndex}
                   title={part.subtitle}
-                  content={<p>{part.text}</p>}
+                  content={<p className="text-muted-foreground">{part.text}</p>}
                   index={sectionIndex * 10 + partIndex}
+                  
                 />
               ))}
             </div>

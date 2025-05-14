@@ -19,7 +19,7 @@ interface Article {
 const articles: Article[] = [
   {
     title: "Foundations for a Fluid, AI-Augmented Mind-Mapping System",
-    excerpt: "Creative thinking is nonlinear, associative, and often emergent. Yet most tools constrain us to rigid lists, boxes, and outlines. NOODL proposes an alternative...",
+    excerpt: "Creative thinking is nonlinear, associative, and often emergent. Yet most tools constrain us to rigid lists, boxes, and outlines.",
     description: `
       <div class="space-y-6">
         <section>
@@ -34,7 +34,7 @@ const articles: Article[] = [
   },
   {
     title: "Design Engineering meets LLMs",
-    excerpt: "Comment j'utilise les LLMs pour créer des expériences plus naturelles et puissantes.",
+    excerpt: "How I use LLMs to create more natural and powerful experiences.",
     description: `
       <div class="space-y-6">
         <section>
@@ -75,7 +75,7 @@ export default function ArticlesPage() {
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-4">
                     <span className="text-sm text-gray-500 font-mono">
-                      {new Date(article.date).toLocaleDateString('fr-FR', {
+                      {new Date(article.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric'
@@ -87,7 +87,7 @@ export default function ArticlesPage() {
                     {article.title}
                   </h2>
                   
-                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                  <p className="text-muted-foreground  text-base leading-relaxed line-clamp-3">
                     {article.excerpt}
                   </p>
 

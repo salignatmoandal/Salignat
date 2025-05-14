@@ -1,6 +1,7 @@
 'use client';
 
 import HoverBubble from "../ui/HoverBubble";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function IntroSection() {
   return (
@@ -23,16 +24,15 @@ export default function IntroSection() {
       {/* Tagline */}
       <p className="text-base text-muted-foreground leading-relaxed text-justify">
         Crafting AI platforms, distributed systems, and creative tools at the intersection of{" "}
-        <span className="italic underline text-[#0B23FF]">Design Engineering</span> and{" "}
+        <span className="italic  text-[#0B23FF]">Design Engineering</span> and{" "}
         <span className="italic text-[#0B23FF]">LLMs</span>.
       </p>
 
       {/* WHY Section */}
       <div className="flex flex-col gap-3 mt-8">
-
         <div className="text-base leading-relaxed text-muted-foreground space-y-[5px]">
-          <p className="text-[#0B23FF] font-medium">“Why do I build?”</p>
-          <p>Because tools aren’t just meant to work — they’re meant to feel.</p>
+          <p className="text-[#0B23FF] font-medium leading-relaxed text-">"Why do I build?"</p>
+          <p>Because tools aren't just meant to work — they're meant to feel.</p>
           <p>To guide. To inspire. To empower.</p>
           <p>
             I believe the sweet spot is where{" "}
@@ -43,9 +43,10 @@ export default function IntroSection() {
             <em>for</em> you.
           </p>
           <p className="text-[#0B23FF] font-semibold">
-            That’s where I craft. <br />
-            That’s why I build.
+            That's where I craft. <br />
+            That's why I build.
           </p>
+         
         </div>
       </div>
     </section>
