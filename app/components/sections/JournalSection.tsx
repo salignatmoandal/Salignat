@@ -11,7 +11,7 @@ export default function JournalSection() {
         <div>
           <LinkPreview
             url="https://noodl.world"
-            className="underline font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-[#0B23FF] isStatic"
+            className=" text-base underline font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-[#0B23FF] isStatic"
           >
           Noodl
           </LinkPreview>

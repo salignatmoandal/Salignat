@@ -27,21 +27,21 @@ const articles: Article[] = [
     description: "",
     content: "Blocks that store valuable information. For instance, Bitcoin blocks store transactions, the essence of any cryptocurrency. Beside this, a block contains some technical information, like its version, current timestamp and the hash of the previous block. ",
     date: "2025-05-12",
-    slug: "article-1"
+    slug: "blockchain-basic-prototype"
   },
   {
     title: "Understanding AWS SQS and EC2 Scaling",
     description: "AWS SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. It ensures the delivery of messages between software components at any volume without losing messages or requiring other services to be available.",
     content: "",
     date: "2025-05-06",
-    slug: "article-1"
+    slug: "aws-sqs-ec2-scaling"
   },
   {
     title: "The Book of Shaders",
     description: "A great resource for learning about shaders and lighting in a visually interactive and approachable manner.",
     content: "",
     date: "2025-05-03",
-    slug: "article-1"
+    slug: "book-of-shaders"
   }
 ]
 
@@ -49,8 +49,8 @@ export default function ArticlesPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
       <div className="max-w-2xl w-full flex flex-col gap-6">
-        <Clock className="mb-20 self-center" />
-        <Navbar className="mb-20 self-center" />
+        {/* <Clock className="mb-5 self-center" /> */}
+        <Navbar className="mb-2 self-center" />
         
         {/* <h1 className="text-2xl text-left text-[#0B23FF] mb-8">Notes</h1> */}
         
