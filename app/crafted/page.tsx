@@ -2,6 +2,7 @@ import Navbar from '../components/ui/NavBar'
 import Clock from '../components/Clock'
 import React from 'react'
 
+
 interface Crafted {
     title: string
     description: string
@@ -37,7 +38,7 @@ const crafted: Crafted[] = [
         content: "TerraLambda is a cloud-based platform for deploying and managing Lambda functions. It provides a scalable and cost-effective solution for running serverless code in the cloud.",
         date: "2025-02-11",
         slug: "terralambda",
-        status: "inactive",
+        status: "active",
         githubUrl: "https://github.com/salignatmoandal/terraLambda"
     },
     {
@@ -55,22 +56,21 @@ const crafted: Crafted[] = [
         content: "Rayon is a comprehensive solution for audio processing, speech recognition, text analysis, and location-based services. By integrating functionalities such as audio recording, speech-to-text conversion, natural language processing, geocoding, and AI-powered suggestions, the system aims to deliver a seamless user experience",
         date: "2025-01-09",
         slug: "rayon",
-        status: "inactive",
+        status: "active",
         githubUrl: "https://github.com/votre-username/rayon"
     },
     {
         title: "Healytics",
         description: "App for health",
         content: "Healytics is a mobile health application designed to simplify the medical consultation process by leveraging artificial intelligence and conversational technology. Built with React Native, Healytics helps users easily track and document health symptoms, enabling efficient communication with healthcare professionals.",
-        date: "2025-01-09",
+        date: "2025-03-16",
         slug: "healytics",
         status: "inactive",
-        githubUrl: "https://github.com/votre-username/rayon"
+        githubUrl: "https://github.com/salignatmoandal/Healytics"
     }   
 ]
 
 export default function CraftedPage() {
-    // Trier les projets par date (du plus récent au plus ancien)
     const sortedCrafted = [...crafted].sort((a, b) => {
         return new Date(b.date).getTime() - new Date(a.date).getTime()
     })
@@ -99,6 +99,14 @@ export default function CraftedPage() {
                                         <h2 className="text-lg italic font-medium text-[#0B23FF] group-hover:underline">
                                             {craft.title}
                                         </h2>
+                                        <div 
+                                            className={`w-2 h-2 rounded-full ${
+                                                craft.status === 'active' 
+                                                    ? 'bg-green-500' 
+                                                    : 'bg-red-500'
+                                            }`}
+                                            title={craft.status === 'active' ? 'Projet actif' : 'Projet inactif'}
+                                        />
                                         {craft.githubUrl && (
                                             <a 
                                                 href={craft.githubUrl}
