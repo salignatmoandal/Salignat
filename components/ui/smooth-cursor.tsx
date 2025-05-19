@@ -15,11 +15,12 @@ export interface SmoothCursorProps {
     stiffness: number;
     mass: number;
     restDelta: number;
+    
   };
 }
 
 // Curseur rose personnalisé
-const PinkCursorSVG: FC = () => {
+export const PinkCursorSVG: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

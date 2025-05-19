@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export interface ClockProps {
   className?: string;
 }
-export default function Clock({ className }: ClockProps) {
+export default function Clock({ }: ClockProps) {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {

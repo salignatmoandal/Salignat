@@ -1,7 +1,6 @@
 'use client';
 
 import HoverBubble from "../ui/HoverBubble";
-import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function IntroSection() {
   return (
