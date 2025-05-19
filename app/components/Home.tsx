@@ -12,7 +12,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
       <div className="max-w-2xl w-full flex flex-col gap-6">
         {/* <Clock className="mb-5 self-start rounded-b-md" /> */}
-        <Navbar className="mb-5 self-center" />
+        <Navbar className="mb-15 self-center rounded-b-md" />
         <IntroSection />
         <JournalSection />
         <BeforeSection />

@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Navbar from '../components/ui/NavBar'
 import Clock from '../components/Clock'

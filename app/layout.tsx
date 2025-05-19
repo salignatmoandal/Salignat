@@ -32,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <PageTransitionWrapper>
+          {/* <NavBar className="mb-20" /> */}
           {children}
           <SmoothCursor />
         </PageTransitionWrapper>
