@@ -15,7 +15,7 @@ export default function IntroSection() {
         bubbleContent={
           <p className="text-muted-foreground text-base leading-relaxed">
             Hello, I'm Mawen -<span className="text-[#0B23FF] font-bold"> Software engineer</span> &{" "}
-            <span className="italic text-[#0B23FF] font-bold">designer</span> based in Paris, France.
+            <span className="italic text-[#0B23FF] font-bold ">designer</span> based in Paris, France.
           </p>
         }
       />
@@ -28,9 +28,9 @@ export default function IntroSection() {
       </p>
 
       {/* WHY Section */}
-      <div className="flex flex-col mt-8">
+      <div className="flex flex-col mt-3">
         <div className="text-base leading-relaxed text-muted-foreground space-y-[5px]">
-          <p className="text-[#0B23FF] font-medium leading-relaxed text-">"Why do I build?"</p>
+          <p className="text-[#FFA84C] text-xl italic leading-relaxed">"Why do I build?"</p>
           <p>Because tools aren't just meant to work — they're meant to feel.</p>
           <p>To guide. To inspire. To empower.</p>
           <p>

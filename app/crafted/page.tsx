@@ -1,6 +1,8 @@
 import Navbar from '../components/ui/NavBar'
 import Clock from '../components/Clock'
 import React from 'react'
+import AnimatedArticleSection from '../components/animations/ArticleSectionAnimation'
+import Dock from '../components/ui/Dock'
 
 
 interface Crafted {
@@ -59,15 +61,7 @@ const crafted: Crafted[] = [
         status: "active",
         githubUrl: "https://github.com/votre-username/rayon"
     },
-    {
-        title: "Healytics",
-        description: "App for health",
-        content: "Healytics is a mobile health application designed to simplify the medical consultation process by leveraging artificial intelligence and conversational technology. Built with React Native, Healytics helps users easily track and document health symptoms, enabling efficient communication with healthcare professionals.",
-        date: "2025-03-16",
-        slug: "healytics",
-        status: "inactive",
-        githubUrl: "https://github.com/salignatmoandal/Healytics"
-    }   
+  
 ]
 
 export default function CraftedPage() {
@@ -76,12 +70,14 @@ export default function CraftedPage() {
     })
 
     return (
-        <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
+        <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6  mt-10 mb-10">
             <div className="max-w-2xl w-full flex flex-col gap-6">
                 <Navbar className="mb-5 self-center rounded-b-md" />
+                <Dock />
                 <div className="text-base flex flex-col gap-8">
                     {sortedCrafted.map((craft, index) => (
                         <React.Fragment key={craft.slug}>
+                            
                             <article className="group">
                                 <div className="flex flex-col gap-2">
                                     <div className="flex items-center gap-4">
