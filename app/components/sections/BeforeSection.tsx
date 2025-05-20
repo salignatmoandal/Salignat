@@ -1,7 +1,7 @@
 export default function BeforeSection() {
     return (
       <div className="flex flex-col gap-1">
-        <h2 className="text-xl text-gray-500  font-semibold uppercase">Before</h2>
+        <h2 className="text-xl text-gray-500   uppercase">Previously</h2>
         <div className="flex flex-col gap-4">
           <div>
             <div className="flex items-center gap-2">

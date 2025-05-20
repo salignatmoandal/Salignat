@@ -13,53 +13,59 @@ interface Crafted {
     content: string
     status: string
     githubUrl?: string
+    tags?: string[]
 }
 
 const crafted: Crafted[] = [
     {
         title: "Noodl",
-        description: "Platform for AI-augmented mind-mapping",
-        content: "NOODL is an AI-augmented mind-mapping platform designed to boost creativity and organize ideas visually. It offers a fluid, collaborative interface where each node can generate intelligent suggestions. Inspired by tools like Miro and XMindMap, NOODL helps designers, creators, and teams brainstorm, build visual identities, and structure complex ideas effortlessly.",
+        description: "Started with curiosity. Became a tool for thinking out loud.",
+        content: "NOODL started as a playful experiment — a personal dive into React Flow, Supabase, and Next.js to explore the creative power of graphs and visual thinking. I didn't plan to build a full platform. I just wanted to see what would happen if I mixed mind-mapping, AI, and a bit of flow-based design — no pressure, just curiosity.It quickly turned into NOODL: an AI-augmented mind-mapping tool where ideas grow visually, nodes think with you, and collaboration feels natural. Inspired by tools like Miro and XMind, it's built for creatives, designers, and teams who love structure without rigidity.  Still Evolving. Still learning. Still Noodling.",
         date: "2025-05-12",
         slug: "noodl",
         status: "active",
-        githubUrl: "https://www.noodl.world/"
+        githubUrl: "https://www.noodl.world/",
+        tags: ["AI", "Mind-Mapping", "Visual Thinking", "Collaboration"]
     },
     {
         title: "Gomon",
-        description: "Cloud Project",
-        content: "Gomon is a lightweight, self-hosted monitoring solution for Go applications. It provides essential metrics collection and exposure through HTTP endpoints, with built-in Prometheus compatibility and pprof profiling.",
+        description: "Gomon started as a simple experiment :",
+        content: "I wanted to understand how to monitor Go applications in a clean, efficient, and self-hosted way — without relying on heavy external services. So I built Gomon, a lightweight monitoring tool that exposes key metrics (latency, memory, goroutines, error rates) through HTTP endpoints, with native Prometheus support and built-in pprof profiling.",
         date: "2025-03-01",
         slug: "gomon",
         status: "active",
-        githubUrl: "https://github.com/salignatmoandal/gomon"
+        githubUrl: "https://github.com/salignatmoandal/gomon",
+        tags: ["Monitoring", "Go", "Prometheus", "pprof"]
     },
     {
         title: "TerraLambda",
-        description: " Cloud Project",
-        content: "TerraLambda is a cloud-based platform for deploying and managing Lambda functions. It provides a scalable and cost-effective solution for running serverless code in the cloud.",
+        description: "TerraLambda started as a hands-on project to explore the world of cloud infrastructure :",
+        content: "I wanted to learn how to work with AWS, write real-world tools in Go, and understand how Terraform and the Cobra CLI could power developer workflows. What began as a technical curiosity turned into TerraLambda : a lightweight tool to deploy and manage AWS Lambda functions using Go + Terraform, designed to make serverless deployments smoother, more consistent, and easier to automate It's minimal, self-contained, and made to help developers gain visibility into their Go apps — fast.No dashboards. No fluff. Just observability where it matters.",
         date: "2025-02-11",
         slug: "terralambda",
         status: "active",
-        githubUrl: "https://github.com/salignatmoandal/terraLambda"
+        githubUrl: "https://github.com/salignatmoandal/terraLambda",
+        tags: ["Cloud", "Lambda", "Serverless", "AWS"]
     },
     {
         title: "MailGo",
-        description: "Extension for Gmail",
-        content: "MailGo is an AI-powered Extension  designed to automate email replies, boost productivity, and provide intelligent email management. It integrates seamlessly with Gmail, drafts smart responses, and schedules emails.",
+        description: "MailGo started as a playground to explore how AI could help reduce email overload.",
+        content: "I wanted to experiment with Python, NLP, task queues (Celery), and Redis — and see how it all could come together in a real-world use case. So I built MailGo, an AI-powered Gmail extension that drafts smart replies, manages threads contextually, and suggests actions — all directly inside the inbox. Behind the scenes, it uses natural language processing, background workers, and a fast API layer to deliver quick and relevant suggestions, powered by OpenAI and deployed on GCP It's part productivity boost, part personal lab — where I learned to orchestrate AI services, handle async processing, and build something useful. Still rough, but it works. And that's the best part. ",
         date: "2025-04-05",
         slug: "mailgo",
         status: "inactive",
-        githubUrl: "https://github.com/salignatmoandal/MailGo"
+        githubUrl: "https://github.com/salignatmoandal/MailGo",
+        tags: ["AI", "Email", "Productivity", "Gmail"]
     },
     {
         title: "Rayon",
-        description: "Research Speech Recognition",
-        content: "Rayon is a comprehensive solution for audio processing, speech recognition, text analysis, and location-based services. By integrating functionalities such as audio recording, speech-to-text conversion, natural language processing, geocoding, and AI-powered suggestions, the system aims to deliver a seamless user experience",
+        description: "Rayon began as the final-year project of a designer friend —a way for me to dive into speech recognition, audio processing, and natural language understanding through a unified system.",
+        content: "I wanted to understand how to capture voice, transcribe it, analyze the text, and enrich the context with location-based services. So I built Rayon: a modular platform that records audio, performs speech-to-text, applies NLP for meaning extraction, and uses geocoding to ground interactions in the real world. It's still experimental, but through it I learned a lot — about voice pipelines, context-aware systems, and what it takes to craft intuitive, voice-first experiences",
         date: "2025-01-09",
         slug: "rayon",
         status: "active",
-        githubUrl: "https://github.com/votre-username/rayon"
+        githubUrl: "https://github.com/salignatmoandal/rayon",
+        tags: ["Speech Recognition", "Audio Processing", "Text Analysis", "Location-Based Services"]
     },
   
 ]
@@ -92,7 +98,7 @@ export default function CraftedPage() {
                                     </div>
                                     
                                     <div className="flex items-center gap-2">
-                                        <h2 className="text-lg italic font-medium text-[#0B23FF] group-hover:underline">
+                                        <h2 className="text-xl italic font-medium text-[#0B23FF] group-hover:underline">
                                             {craft.title}
                                         </h2>
                                         <div 
@@ -121,12 +127,22 @@ export default function CraftedPage() {
                                         )}
                                     </div>
                                     
-                                    <p className="text-gray-400 text-sm leading-relaxed">
+                                    <p className="text-gray-400 text-base leading-relaxed">
                                         {craft.description}
-                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                        <p className="text-gray-400 text-base leading-relaxed">
                                             {craft.content}
                                         </p>
                                     </p>
+                                    <div className="flex flex-wrap gap-2 mt-2">
+                                        {craft.tags?.map(tag => (
+                                            <span 
+                                                key={tag} 
+                                                className="px-3 py-1 text-sm border border-[#0B23FF] rounded-full text-[#0B23FF]"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </article>
                             
