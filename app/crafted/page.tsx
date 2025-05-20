@@ -10,7 +10,7 @@ interface Crafted {
     description: string
     date: string
     slug: string
-    content: string
+    content: string[]
     status: string
     githubUrl?: string
     tags?: string[]
@@ -20,52 +20,76 @@ const crafted: Crafted[] = [
     {
         title: "Noodl",
         description: "Started with curiosity. Became a tool for thinking out loud.",
-        content: "NOODL started as a playful experiment — a personal dive into React Flow, Supabase, and Next.js to explore the creative power of graphs and visual thinking. I didn't plan to build a full platform. I just wanted to see what would happen if I mixed mind-mapping, AI, and a bit of flow-based design — no pressure, just curiosity.It quickly turned into NOODL: an AI-augmented mind-mapping tool where ideas grow visually, nodes think with you, and collaboration feels natural. Inspired by tools like Miro and XMind, it's built for creatives, designers, and teams who love structure without rigidity.  Still Evolving. Still learning. Still Noodling.",
+        content: [
+            "NOODL started as a playful experiment — a personal dive into React Flow, Supabase, and Next.js to explore the creative power of graphs and visual thinking.",
+            "I didn't plan to build a full platform. I just wanted to see what would happen if I mixed mind-mapping, AI, and a bit of flow-based design — no pressure, just curiosity.",
+            "It quickly turned into NOODL: an AI-augmented mind-mapping tool where ideas grow visually, nodes think with you, and collaboration feels natural.",
+            "Inspired by tools like Miro and XMind, it's built for creatives, designers, and teams who love structure without rigidity.",
+            "Still Evolving. Still learning. Still Noodling."
+        ],
         date: "2025-05-12",
         slug: "noodl",
         status: "active",
         githubUrl: "https://www.noodl.world/",
-        tags: ["AI", "Mind-Mapping", "Visual Thinking", "Collaboration"]
+        tags: [ "Mind-Mapping", "Node-based Thinking", "Context-Aware", "Visual Thinking", "Collaboration" , "React Flow" , "Supabase", "Design Engineering" , "LLM" , "OpenAI"]
     },
     {
         title: "Gomon",
         description: "Gomon started as a simple experiment :",
-        content: "I wanted to understand how to monitor Go applications in a clean, efficient, and self-hosted way — without relying on heavy external services. So I built Gomon, a lightweight monitoring tool that exposes key metrics (latency, memory, goroutines, error rates) through HTTP endpoints, with native Prometheus support and built-in pprof profiling.",
+        content: [
+            "I wanted to understand how to monitor Go applications in a clean, efficient, and self-hosted way — without relying on heavy external services.",
+            "So I built Gomon, a lightweight monitoring tool that exposes key metrics (latency, memory, goroutines, error rates) through HTTP endpoints, with native Prometheus support and built-in pprof profiling."
+        ],
         date: "2025-03-01",
         slug: "gomon",
         status: "active",
         githubUrl: "https://github.com/salignatmoandal/gomon",
-        tags: ["Monitoring", "Go", "Prometheus", "pprof"]
+        tags: ["Monitoring", "Go", "Prometheus", "pprof" , "Self-hosted" , "Lightweight" , "Observability" , "Metrics" ]
     },
     {
         title: "TerraLambda",
         description: "TerraLambda started as a hands-on project to explore the world of cloud infrastructure :",
-        content: "I wanted to learn how to work with AWS, write real-world tools in Go, and understand how Terraform and the Cobra CLI could power developer workflows. What began as a technical curiosity turned into TerraLambda : a lightweight tool to deploy and manage AWS Lambda functions using Go + Terraform, designed to make serverless deployments smoother, more consistent, and easier to automate It's minimal, self-contained, and made to help developers gain visibility into their Go apps — fast.No dashboards. No fluff. Just observability where it matters.",
+        content: [
+            "I wanted to learn how to work with AWS, write real-world tools in Go, and understand how Terraform and the Cobra CLI could power developer workflows.",
+            "What began as a technical curiosity turned into TerraLambda : a lightweight tool to deploy and manage AWS Lambda functions using Go + Terraform, designed to make serverless deployments smoother, more consistent, and easier to automate",
+            "It's minimal, self-contained, and made to help developers gain visibility into their Go apps — fast.",
+            "No dashboards. No fluff. Just observability where it matters."
+        ],
         date: "2025-02-11",
         slug: "terralambda",
         status: "active",
         githubUrl: "https://github.com/salignatmoandal/terraLambda",
-        tags: ["Cloud", "Lambda", "Serverless", "AWS"]
+        tags: ["Cloud", "Lambda", "Serverless", "AWS", "IAM", "Terraform", "Orchestration" , "Deployment"]
     },
     {
         title: "MailGo",
         description: "MailGo started as a playground to explore how AI could help reduce email overload.",
-        content: "I wanted to experiment with Python, NLP, task queues (Celery), and Redis — and see how it all could come together in a real-world use case. So I built MailGo, an AI-powered Gmail extension that drafts smart replies, manages threads contextually, and suggests actions — all directly inside the inbox. Behind the scenes, it uses natural language processing, background workers, and a fast API layer to deliver quick and relevant suggestions, powered by OpenAI and deployed on GCP It's part productivity boost, part personal lab — where I learned to orchestrate AI services, handle async processing, and build something useful. Still rough, but it works. And that's the best part. ",
+        content: [
+            "I wanted to experiment with Python, NLP, task queues (Celery), and Redis — and see how it all could come together in a real-world use case.",
+            "So I built MailGo, an AI-powered Gmail extension that drafts smart replies, manages threads contextually, and suggests actions — all directly inside the inbox.",
+            "Behind the scenes, it uses natural language processing, background workers, and a fast API layer to deliver quick and relevant suggestions, powered by OpenAI and deployed on GCP",
+            "It's part productivity boost, part personal lab — where I learned to orchestrate AI services, handle async processing, and build something useful.",
+            "Still rough, but it works. And that's the best part."
+        ],
         date: "2025-04-05",
         slug: "mailgo",
         status: "inactive",
         githubUrl: "https://github.com/salignatmoandal/MailGo",
-        tags: ["AI", "Email", "Productivity", "Gmail"]
+        tags: [ "NLP","SMTP", "Async Tasks", "Productivity", "Gmail Extension", "Thread Analysis", "Broker" ,"Worker" , "Celery" , "Redis" , "OpenAI"]
     },
     {
         title: "Rayon",
         description: "Rayon began as the final-year project of a designer friend —a way for me to dive into speech recognition, audio processing, and natural language understanding through a unified system.",
-        content: "I wanted to understand how to capture voice, transcribe it, analyze the text, and enrich the context with location-based services. So I built Rayon: a modular platform that records audio, performs speech-to-text, applies NLP for meaning extraction, and uses geocoding to ground interactions in the real world. It's still experimental, but through it I learned a lot — about voice pipelines, context-aware systems, and what it takes to craft intuitive, voice-first experiences",
+        content: [
+            "I wanted to understand how to capture voice, transcribe it, analyze the text, and enrich the context with location-based services.",
+            "So I built Rayon: a modular platform that records audio, performs speech-to-text, applies NLP for meaning extraction, and uses geocoding to ground interactions in the real world.",
+            "It's still experimental, but through it I learned a lot — about voice pipelines, context-aware systems, and what it takes to craft intuitive, voice-first experiences"
+        ],
         date: "2025-01-09",
         slug: "rayon",
         status: "active",
         githubUrl: "https://github.com/salignatmoandal/rayon",
-        tags: ["Speech Recognition", "Audio Processing", "Text Analysis", "Location-Based Services"]
+        tags: ["Speech Recognition", "Audio Processing", "Noise reduction", "Text Analysis", "Location-Based Services" , "Whisper", "NER-ds", "dslim/bert-base-NER"]
     },
   
 ]
@@ -127,8 +151,15 @@ export default function CraftedPage() {
                                         )}
                                     </div>
                                     
-                                    <div className="text-gray-400 text-base leading-relaxed whitespace-pre-line">
-                                        {craft.description} {craft.content}
+                                    <div className="flex flex-col gap-4">
+                                        <p className="text-gray-400 text-base leading-relaxed">
+                                            {craft.description}
+                                        </p>
+                                        {craft.content.map((paragraph, index) => (
+                                            <p key={index} className="text-gray-400 text-base leading-relaxed">
+                                                {paragraph}
+                                            </p>
+                                        ))}
                                     </div>
                                     <div className="flex flex-wrap gap-2 mt-2">
                                         {craft.tags?.map(tag => (
