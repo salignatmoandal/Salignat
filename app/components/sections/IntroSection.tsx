@@ -15,7 +15,7 @@ export default function IntroSection() {
         bubbleContent={
           <p className="text-muted-foreground text-base leading-relaxed">
             Hello, I'm Mawen -<span className="text-[#0B23FF] font-bold"> Software engineer</span> &{" "}
-            <span className="italic text-[#0B23FF] font-bold ">designer</span> based in Paris, France.
+            <span className="italic text-[#0B23FF] font-bold "> LLM Designer</span> based in Paris, France.
           </p>
         }
       />
