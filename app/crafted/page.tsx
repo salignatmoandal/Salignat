@@ -127,12 +127,9 @@ export default function CraftedPage() {
                                         )}
                                     </div>
                                     
-                                    <p className="text-gray-400 text-base leading-relaxed">
-                                        {craft.description}
-                                        <p className="text-gray-400 text-base leading-relaxed">
-                                            {craft.content}
-                                        </p>
-                                    </p>
+                                    <div className="text-gray-400 text-base leading-relaxed whitespace-pre-line">
+                                        {craft.description} {craft.content}
+                                    </div>
                                     <div className="flex flex-wrap gap-2 mt-2">
                                         {craft.tags?.map(tag => (
                                             <span 
