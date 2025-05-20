@@ -30,7 +30,7 @@ export default function IntroSection() {
       {/* WHY Section */}
       <div className="flex flex-col mt-3">
         <div className="text-base leading-relaxed text-muted-foreground space-y-[5px]">
-          <p className="text-[#FFA84C] text-xl italic leading-relaxed">"Why do I build?"</p>
+          <p className="text-gray-500 text-xl italic leading-relaxed">"Why do I build?"</p>
           <p>Because tools aren't just meant to work — they're meant to feel.</p>
           <p>To guide. To inspire. To empower.</p>
           <p>
