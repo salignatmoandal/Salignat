@@ -46,7 +46,20 @@ const articles: Article[] = [
     date: "2024-03-20",
     slug: "article-2"
   },
-  // Ajoutez d'autres articles ici
+  {
+    title: "From Entities to Edges: NER and the Shape of Knowledge",
+    excerpt: "This essay explores how Named Entity Recognition (NER) transforms raw text into structured meaning — and how, when paired with knowledge graphs, it reveals the hidden architecture of language. From identifying entities to connecting them, we uncover how language becomes a web of relationships machines can navigate, reason with, and grow from.",
+    description: `
+      <div class="space-y-6">
+        <section>
+          <h3 class="text-[#0B23FF] font-medium mb-2">The Problem with Linear Thinking</h3>
+          <p>Creative thinking is nonlinear, associative, and often emergent. Yet most tools constrain us to rigid lists, boxes, and outlines.</p>
+        </section>
+      </div>
+    `,
+    date: "2024-03-20",
+    slug: "article-3"
+  }
 ]
 
 export default function ArticlesPage() {

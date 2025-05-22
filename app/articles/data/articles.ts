@@ -79,5 +79,46 @@ export const articles = {
           ]
         }
       ]
-    }
+    },
+    'article-3': {
+    title: "From Entities to Edges: NER and the Shape of Knowledge",
+    date: "2024-05-22",
+    sections: [
+      {
+        title: "1. Naming the World Through Language",
+        parts: [
+          {
+            subtitle: "Seeing Text as Structure",
+            text: "Text may look like a linear sequence of words, but hidden within it are signals of meaning — names, places, organizations, values. Named Entity Recognition (NER) is the process of surfacing those signals, transforming unstructured language into data-rich fragments that can be acted upon. It is the bridge between how we write and how machines begin to understand.",
+          },
+          {
+            subtitle: "The Power of Labeling",
+            text: "By identifying people, places, and dates within a sentence, NER gives machines the ability to differentiate between context and noise. A sentence like 'Ada Lovelace worked in London' becomes more than a string of words — it becomes a structured representation of a historical fact. In doing so, NER lays the foundation for building semantic understanding at scale.",
+          },
+          {
+            subtitle: "Language Meets Graph",
+            text: "NER doesn’t just extract meaning — it prepares it for connection. Once entities are identified, they can be turned into nodes in a graph. The relationships — implied or explicit — become edges. Language, once fluid and ambiguous, begins to crystallize into structure. This is the moment where understanding turns into knowledge.",
+          }
+        ]
+      },
+      {
+        title: "2. Toward Living Graphs of Meaning",
+        parts: [
+          {
+            subtitle: "Connecting the Dots",
+            text: "When we link entities together, we move from isolated facts to networks of meaning. These connections — who did what, where, and when — form the basis of a knowledge graph. A knowledge graph doesn’t just store data; it reflects relationships, enables reasoning, and grows dynamically as new information is added.",
+          },
+          {
+            subtitle: "NER as Interface to Knowledge",
+            text: "In this light, NER becomes more than a tool for extraction — it becomes an interface. It allows machines to populate and evolve knowledge structures based on language alone. It also enables systems to ask better questions, surface more relevant information, and navigate meaning across domains and languages.",
+          },
+          {
+            subtitle: "The Future of Semantic Design",
+            text: "As we explore the frontiers of AI-augmented systems, the blend of NER and knowledge graphs offers a design paradigm where language and logic coexist. It’s not just about reading text — it’s about interpreting it, modeling it, and navigating its possibilities. In this hybrid space, we stop asking what text says — and start discovering what it knows.",
+          }
+        ]
+      }
+    ]
   }
+}
+
