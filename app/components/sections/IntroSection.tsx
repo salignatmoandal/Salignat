@@ -1,24 +1,13 @@
 'use client';
-
-import HoverBubble from "../ui/HoverBubble";
-
 export default function IntroSection() {
   return (
     <section className="flex flex-col gap-3 text-justify leading-relaxed">
       {/* Nom + Hover bio */}
-      <HoverBubble
-        triggerElement={
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0B23FF]">
-            Welcome to my world.
-          </h1>
-        }
-        bubbleContent={
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Hello, I'm Mawen -<span className="text-[#0B23FF] font-bold"> Software engineer</span> &{" "}
-            <span className="italic text-[#0B23FF] font-bold "> LLM Designer</span> based in Paris, France.
-          </p>
-        }
-      />
+      <div className="flex items-center">
+        <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0B23FF]">
+          Welcome to my world.
+        </h1>
+      </div>
 
       {/* Tagline */}
       <p className="text-base text-muted-foreground leading-relaxed text-justify">
