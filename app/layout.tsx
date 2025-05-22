@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import NavBar from "@/app/components/ui/NavBar";
-import Clock from "./components/Clock";
-import PageTransition from "./components/animations/PageTransition";
 import PageTransitionWrapper from "./components/animations/PageTransition";
+import React from 'react'
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,6 +20,8 @@ export const metadata: Metadata = {
   description: "Mawen Salignat-Moandal",
 };
 
+const MemoizedSmoothCursor = React.memo(SmoothCursor)
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +35,7 @@ export default function RootLayout({
         <PageTransitionWrapper>
           {/* <NavBar className="mb-20" /> */}
           {children}
-          <SmoothCursor />
+          <MemoizedSmoothCursor />
         </PageTransitionWrapper>
       </body>
     </html>

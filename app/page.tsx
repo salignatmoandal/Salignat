@@ -1,15 +1,10 @@
 import React from 'react'
-
 import Home from './components/Home'
 
-
-function page() {
+export default function Page() {
   return (
-    <div>
-      
+    <main className="min-h-screen">
       <Home />
-    </div>
+    </main>
   )
 }
-
-export default page
