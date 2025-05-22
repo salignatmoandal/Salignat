@@ -1,8 +1,8 @@
 import Navbar from '../components/ui/NavBar'
 import Clock from '../components/Clock'
 import React from 'react'
-import AnimatedArticleSection from '../components/animations/ArticleSectionAnimation'
 import Dock from '../components/ui/Dock'
+
 
 
 interface Crafted {
@@ -122,7 +122,7 @@ export default function CraftedPage() {
                                     </div>
                                     
                                     <div className="flex items-center gap-2">
-                                        <h2 className="text-xl italic font-medium text-[#0B23FF] group-hover:underline">
+                                        <h2 className="text-xl   text-[#0B23FF] group-hover:underline">
                                             {craft.title}
                                         </h2>
                                         <div 
@@ -151,7 +151,7 @@ export default function CraftedPage() {
                                         )}
                                     </div>
                                     
-                                    <div className="flex flex-col gap-4">
+                                    <div className="flex flex-col gap-[5px]">
                                         <p className="text-gray-400 text-base leading-relaxed">
                                             {craft.description}
                                         </p>
@@ -180,6 +180,7 @@ export default function CraftedPage() {
                         </React.Fragment>
                     ))}
                 </div>
+                
             </div>
         </main>
     )

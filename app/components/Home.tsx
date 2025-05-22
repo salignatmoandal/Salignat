@@ -18,7 +18,7 @@ export default function Home() {
         {/* <Clock className="mb-5 self-start rounded-b-md" /> */}
         <Navbar className="mb-5 self-center rounded-b-md" />
       
-        <IntroSection />
+        <IntroSection title={"Welcome to my world."} />
         <JournalSection />
         <BeforeSection />
         <ContactSection />

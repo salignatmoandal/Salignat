@@ -24,8 +24,8 @@ const socialLinks = [
 
 export default function Dock() {
   return (
-    <div className="fixed bottom-6 left-6 z-50">
-      <div className="flex flex-col gap-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/20">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:left-6 md:translate-x-0">
+      <div className="flex flex-row md:flex-col gap-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/20">
         {socialLinks.map((link, index) => (
           <motion.a
             key={link.name}
