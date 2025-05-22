@@ -32,8 +32,8 @@ const articles: Article[] = [
     slug: "article-1"
   },
   {
-    title: "AI Inference in Distributed Systems",
-    excerpt: "How I use LLMs to create more natural and powerful experiences.",
+    title: "Design Engineering meets LLMs",
+    excerpt: "A new design paradigm is emerging where engineering meets language models — shifting from deterministic problem-solving to collaborative, interpretive dialogue with hybrid intelligence.",
     description: `
       <div class="space-y-6">
         <section>
