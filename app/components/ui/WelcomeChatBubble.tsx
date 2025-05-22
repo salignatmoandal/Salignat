@@ -13,12 +13,6 @@ export default function WelcomeChatBubble({ children }: { children: React.ReactN
     }
   }, []);
 
-  useEffect(() => {
-    if (!open) return;
-    const timer = setTimeout(() => setOpen(false), 4000);
-    return () => clearTimeout(timer);
-  }, [open]);
-
   return (
     <AnimatePresence>
       {open && (
@@ -30,6 +24,12 @@ export default function WelcomeChatBubble({ children }: { children: React.ReactN
           className="fixed top-8 left-8 z-50"
         >
           <div className="relative bg-[#0B23FF] text-white rounded-2xl px-4 py-2 max-w-xs text-sm shadow-lg pl-7">
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute -top-2 -right-2 bg-white text-[#0B23FF] rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold hover:bg-gray-100 transition-colors"
+            >
+              ×
+            </button>
             {/* Pic fine et élégante façon iMessage */}
             <svg
               className="absolute left-0 top-1/2 -translate-y-1/2"

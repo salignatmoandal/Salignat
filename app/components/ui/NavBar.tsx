@@ -55,7 +55,7 @@ export default function Navbar({ className = '' }: NavbarProps) {
   return (
     <nav
       ref={navRef}
-      className={`relative flex justify-center gap-8 py-2 text-sm font-medium tracking-widest uppercase ${className}`}
+      className={`relative flex justify-center gap-8 py-2 text-sm font-medium tracking-widest uppercase z-50 ${className}`}
     >
       {filteredLinks.map(({ label, href }) => (
         <Link
