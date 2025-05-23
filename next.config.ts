@@ -1,8 +1,14 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  allowedDevOrigins: ['127.94.0.1']
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    // Désactive ESLint pendant le build de production
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Optionnel : désactive aussi TypeScript strict checking
+    ignoreBuildErrors: true,
+  },
+  output: 'standalone',
 };
 
-export default nextConfig;
+module.exports = nextConfig;

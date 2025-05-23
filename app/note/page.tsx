@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Navbar from '../components/ui/NavBar'
-import Clock from '../components/Clock'
 
 // Type pour les articles
 interface Article {
@@ -49,7 +48,6 @@ export default function ArticlesPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
       <div className="max-w-2xl w-full flex flex-col gap-6">
-        {/* <Clock className="mb-5 self-center" /> */}
         <Navbar className="mb-5 self-center rounded-b-md" />
         
         {/* <h1 className="text-2xl text-left text-[#0B23FF] mb-8">Notes</h1> */}
