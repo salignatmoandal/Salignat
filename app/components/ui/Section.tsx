@@ -4,7 +4,7 @@ function Section() {
   return (
     <><section className="bg-white py-20 px-8">
           <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-800">Hello, I'm Mawen</h2>
+              <h2 className="text-3xl font-bold text-gray-800">Hello, I&apos;m Mawen</h2>
               <p className="text-gray-600 mt-4">Lights on or lights off. Your data, your choice.</p>
           </div>
       </section>

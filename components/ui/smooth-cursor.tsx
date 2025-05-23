@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useSpring } from "motion/react";
-import { FC, JSX, useEffect, useRef, useState } from "react";
+import { motion, useSpring } from "framer-motion";
+import { FC, JSX, useEffect, useRef } from "react";
 
 interface Position {
   x: number;
@@ -15,7 +15,6 @@ export interface SmoothCursorProps {
     stiffness: number;
     mass: number;
     restDelta: number;
-    
   };
 }
 
@@ -83,7 +82,7 @@ export const PinkCursorSVG: FC = () => {
 };
 
 export function SmoothCursor({
-  cursor = <PinkCursorSVG />, // Changement vers le curseur rose par défaut
+  cursor = <PinkCursorSVG />,
   springConfig = {
     damping: 45,
     stiffness: 400,
@@ -91,7 +90,6 @@ export function SmoothCursor({
     restDelta: 0.001,
   },
 }: SmoothCursorProps) {
-  const [isMoving, setIsMoving] = useState(false);
   const lastMousePos = useRef<Position>({ x: 0, y: 0 });
   const velocity = useRef<Position>({ x: 0, y: 0 });
   const lastUpdateTime = useRef(Date.now());
@@ -151,14 +149,10 @@ export function SmoothCursor({
         previousAngle.current = currentAngle;
 
         scale.set(0.95);
-        setIsMoving(true);
-
-        const timeout = setTimeout(() => {
+        
+        setTimeout(() => {
           scale.set(1);
-          setIsMoving(false);
         }, 150);
-
-        return () => clearTimeout(timeout);
       }
     };
 

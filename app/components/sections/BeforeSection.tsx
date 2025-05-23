@@ -18,7 +18,7 @@ export default function BeforeSection() {
               <span className="text-sm text-muted-foreground">2024 Jan - 2024 Dec</span>
             </div>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Built a marketplace for the artworld. Learned a ton, but it didn't take off. Ended up dying.
+              Built a marketplace for the artworld. Learned a ton, but it didn&apos;t take off. Ended up dying.
             </p>
           </div>
         </div>
