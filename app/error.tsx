@@ -4,9 +4,10 @@ export default function Error({
   error,
   reset,
 }: {
-  error: Error
+  error: Error & { digest?: string };
   reset: () => void
 }) {
+  console.error(error);
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="text-center">

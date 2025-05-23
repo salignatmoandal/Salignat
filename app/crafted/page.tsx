@@ -1,5 +1,4 @@
 import Navbar from '../components/ui/NavBar'
-import Clock from '../components/Clock'
 import React from 'react'
 import Dock from '../components/ui/Dock'
 

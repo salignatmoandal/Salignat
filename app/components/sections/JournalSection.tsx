@@ -7,7 +7,7 @@ export default function JournalSection() {
       <h2 className="text-xl text-gray-500 uppercase">Today</h2>
       <div className="text-gray-400 text-sm text-justify leading-relaxed flex items-center gap-2">
         <BadgeNew />
-        <span className="text-muted-foreground text-base">I'm building </span>
+        <span className="text-muted-foreground text-base">I&apos;m building </span>
         <div>
           <LinkPreview
             url="https://noodl.world"
