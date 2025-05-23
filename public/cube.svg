@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cube avec ombre -->
+  <path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" fill="#0B23FF"/>
+  <!-- Ombre -->
+  <path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" fill="black" fill-opacity="0.2"/>
+  <!-- Détails -->
+  <path d="M16 4L28 10L16 16L4 10L16 4Z" fill="#0B23FF" fill-opacity="0.8"/>
+  <path d="M16 28L28 22L16 16L4 22L16 28Z" fill="#0B23FF" fill-opacity="0.6"/>
+</svg> 

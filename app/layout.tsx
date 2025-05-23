@@ -18,6 +18,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mawen Salignat-Moandal",
   description: "Mawen Salignat-Moandal",
+  icons: {
+    icon: [
+      {
+        url: '/cube.svg',
+        type: 'image/svg+xml',
+      }
+    ],
+  },
 };
 
 const MemoizedSmoothCursor = React.memo(SmoothCursor)
