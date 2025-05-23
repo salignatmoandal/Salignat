@@ -28,7 +28,7 @@ const articles: Article[] = [
         <!-- ... autres sections ... -->
       </div>
     `,
-    date: "2024-03-15",
+    date: "2025-05-23",
     slug: "article-1"
   },
   {
@@ -43,7 +43,7 @@ const articles: Article[] = [
         <!-- ... autres sections ... -->
       </div>
     `,
-    date: "2024-03-20",
+    date: "2025-05-13",
     slug: "article-2"
   },
   {
@@ -57,7 +57,7 @@ const articles: Article[] = [
         </section>
       </div>
     `,
-    date: "2024-03-20",
+    date: "2025-05-04",
     slug: "article-3"
   }
 ]

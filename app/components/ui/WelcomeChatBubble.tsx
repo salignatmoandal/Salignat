@@ -5,12 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function WelcomeChatBubble({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
 
+//   useEffect(() => {
+//     const hasSeen = localStorage.getItem("welcomeChatBubbleSeen");
+//     if (!hasSeen) {
+//       setOpen(true);
+//       localStorage.setItem("welcomeChatBubbleSeen", "true");
+//     }
+//   }, []);
+
   useEffect(() => {
-    const hasSeen = localStorage.getItem("welcomeChatBubbleSeen");
-    if (!hasSeen) {
+    const timer = setTimeout(() => {
       setOpen(true);
-      localStorage.setItem("welcomeChatBubbleSeen", "true");
-    }
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

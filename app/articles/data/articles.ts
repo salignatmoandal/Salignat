@@ -1,7 +1,7 @@
 export const articles = {
     'article-1': {
       title: "Foundations for a Fluid, AI-Augmented Mind-Mapping System",
-      date: "2024-03-15",
+      date: "2025-05-23",
       sections: [
         {
           title: "1. Rethinking Creativity",
@@ -42,7 +42,7 @@ export const articles = {
   
     'article-2': {
       title: "Design Engineering meets LLMs",
-      date: "2024-04-22",
+      date: "2025-05-13",
       sections: [
         {
           title: "A Shifting Landscape of Design Reasoning",
@@ -63,6 +63,7 @@ export const articles = {
         },
         {
           title: "Toward a Hybrid Intelligence in Design Practice",
+          date: "2025-05-04",
           parts: [
             {
               subtitle: "Prompting as Practice",

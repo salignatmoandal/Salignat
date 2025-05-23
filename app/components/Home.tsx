@@ -10,7 +10,7 @@ import WelcomeChatBubble from "./ui/WelcomeChatBubble";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
+    <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6 transition-all duration-300">
       <WelcomeChatBubble>
         Hello, I'm Mawen — <span className="font-bold">Software engineer</span> & <span className="italic font-bold">LLM Designer</span>
       </WelcomeChatBubble>
