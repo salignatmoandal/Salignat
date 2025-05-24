@@ -1,5 +1,5 @@
 export const articles = {
-    'article-1': {
+    'AI-augmented-mind-mapping': {
       title: "Foundations for a Fluid, AI-Augmented Mind-Mapping System",
       date: "2025-05-23",
       sections: [
@@ -40,7 +40,7 @@ export const articles = {
       ]
     },
   
-    'article-2': {
+    'design-engineering-llms': {
       title: "Design Engineering meets LLMs",
       date: "2025-05-13",
       sections: [
@@ -81,7 +81,7 @@ export const articles = {
         }
       ]
     },
-    'article-3': {
+    'from-entities-to-edges': {
     title: "From Entities to Edges: NER and the Shape of Knowledge",
     date: "2024-05-22",
     sections: [
