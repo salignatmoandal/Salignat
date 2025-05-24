@@ -29,7 +29,7 @@ const articles: Article[] = [
       </div>
     `,
     date: "2025-05-23",
-    slug: "article-1"
+    slug: "AI-augmented-mind-mapping"
   },
   {
     title: "Design Engineering meets LLMs",
@@ -44,9 +44,9 @@ const articles: Article[] = [
       </div>
     `,
     date: "2025-05-13",
-    slug: "article-2"
+    slug: "design-engineering-llms"
   },
-  {
+  { 
     title: "From Entities to Edges: NER and the Shape of Knowledge",
     excerpt: "This essay explores how Named Entity Recognition (NER) transforms raw text into structured meaning — and how, when paired with knowledge graphs, it reveals the hidden architecture of language. From identifying entities to connecting them, we uncover how language becomes a web of relationships machines can navigate, reason with, and grow from.",
     description: `
@@ -58,7 +58,7 @@ const articles: Article[] = [
       </div>
     `,
     date: "2025-05-04",
-    slug: "article-3"
+    slug: "from-entities-to-edges"
   }
 ]
 
