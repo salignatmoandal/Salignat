@@ -109,7 +109,7 @@ export default function CraftedPage() {
                             
                             <article className="group">
                                 <div className="flex flex-col gap-2">
-                                    <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
                                         <span className="text-lg text-gray-500 font-mono">
                                             {new Date(craft.date).toLocaleDateString('en-US', {
                                                 year: 'numeric',
@@ -151,11 +151,11 @@ export default function CraftedPage() {
                                     </div>
                                     
                                     <div className="flex flex-col gap-[5px]">
-                                        <p className="text-gray-400 text-base leading-relaxed">
+                                        <p className="text-gray-500 text-base leading-relaxed">
                                             {craft.description}
                                         </p>
                                         {craft.content.map((paragraph, index) => (
-                                            <p key={index} className="text-gray-400 text-base leading-relaxed">
+                                            <p key={index} className="text-gray-500 text-base leading-relaxed">
                                                 {paragraph}
                                             </p>
                                         ))}

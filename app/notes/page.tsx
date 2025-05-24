@@ -72,9 +72,9 @@ export default function ArticlesPage() {
                     {article.title}
                   </h2>
                   
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-gray-500 text-base leading-relaxed">
                     {article.description}
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-500 text-base leading-relaxed">
                     {article.content}
                   </p>
                    
