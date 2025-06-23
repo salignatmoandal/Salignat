@@ -59,6 +59,20 @@ const articles: Article[] = [
     `,
     date: "2025-05-04",
     slug: "from-entities-to-edges"
+  }, 
+  {
+    title: "The Utility of a Reverse Proxy in AI Inference Orchestration",
+    excerpt: "Designed a scalable AI inference pipeline with Python and Go, combining FastAPI for model serving and a Go-based reverse proxy for orchestration. Implemented modular stages: preprocessing, tokenization, inference, postprocessing, and monitoring. Enabled secure, observable, and resilient AI delivery with centralized routing, load balancing, and metrics instrumentation.",
+    description: `
+      <div class="space-y-6">
+        <section>
+          <h3 class="text-[#0B23FF] font-medium mb-2"></h3>
+
+        </section>
+      </div>
+    `,
+    date: "2025-06-23",
+    slug: "reverse-proxy-ai-inference"
   }
 ]
 

@@ -8,15 +8,15 @@ export const articles = {
           parts: [
             {
               subtitle: "The Problem with Linear Thinking",
-              text: "Creative thinking is rarely linear. It thrives on associations, spontaneity, and unexpected leaps. Yet, most digital tools impose rigid structures — lists, grids, outlines — that flatten the natural chaos of ideation. This creates friction between how we think and how we’re forced to express those thoughts.",
+              text: "Creative thinking is rarely linear. It thrives on associations, spontaneity, and unexpected leaps. Yet, most digital tools impose rigid structures — lists, grids, outlines — that flatten the natural chaos of ideation. This creates friction between how we think and how we're forced to express those thoughts.",
             },
             {
               subtitle: "A Graph-Based Approach",
-              text: "Creative thinking is rarely linear. It thrives on associations, spontaneity, and unexpected leaps. Yet, most digital tools impose rigid structures — lists, grids, outlines — that flatten the natural chaos of ideation. This creates friction between how we think and how we’re forced to express those thoughts",
+              text: "Creative thinking is rarely linear. It thrives on associations, spontaneity, and unexpected leaps. Yet, most digital tools impose rigid structures — lists, grids, outlines — that flatten the natural chaos of ideation. This creates friction between how we think and how we're forced to express those thoughts",
             },
             {
               subtitle: "Beyond the Canvas",
-              text: "Inspired by the theory of distributed cognition, NOODL becomes more than a tool. It acts as an extension of your mind, responding to your interactions and reshaping itself as your ideas evolve. It’s not a passive surface; it’s a cognitive partner, actively participating in the flow of thinking.",
+              text: "Inspired by the theory of distributed cognition, NOODL becomes more than a tool. It acts as an extension of your mind, responding to your interactions and reshaping itself as your ideas evolve. It's not a passive surface; it's a cognitive partner, actively participating in the flow of thinking.",
             }
           ]
         },
@@ -25,15 +25,15 @@ export const articles = {
           parts: [
             {
               subtitle: "The Power of Flexibility",
-              text: "Ideation isn’t a fixed process — it’s dynamic and context-sensitive. NOODL empowers you to leap from one idea to another, to cluster concepts spatially, and to build meaning visually. The result is a fluid environment that supports the unfolding of thought, not the pre-planned execution of it.",
+              text: "Ideation isn't a fixed process — it's dynamic and context-sensitive. NOODL empowers you to leap from one idea to another, to cluster concepts spatially, and to build meaning visually. The result is a fluid environment that supports the unfolding of thought, not the pre-planned execution of it.",
             },
             {
               subtitle: "AI-Enhanced Insights",
-              text: "Thanks to semantic understanding, NOODL doesn’t just store ideas — it engages with them. It can surface hidden relationships between distant concepts, suggest unexpected directions, or help you break creative blocks. It becomes a second brain that highlights what you didn’t know you were thinking.",
+              text: "Thanks to semantic understanding, NOODL doesn't just store ideas — it engages with them. It can surface hidden relationships between distant concepts, suggest unexpected directions, or help you break creative blocks. It becomes a second brain that highlights what you didn't know you were thinking.",
             },
             {
               subtitle: "A New Vision",
-              text: "This is not just a tool for mind-mapping — it’s a rethinking of digital creativity itself. By blending graph logic, cognitive science, and generative AI, NOODL becomes a space of cognitive amplification. It doesn’t contain your ideas — it expands them. It helps you see what you couldn’t see alone.",
+              text: "This is not just a tool for mind-mapping — it's a rethinking of digital creativity itself. By blending graph logic, cognitive science, and generative AI, NOODL becomes a space of cognitive amplification. It doesn't contain your ideas — it expands them. It helps you see what you couldn't see alone.",
             }
           ]
         }
@@ -98,7 +98,7 @@ export const articles = {
           },
           {
             subtitle: "Language Meets Graph",
-            text: "NER doesn’t just extract meaning — it prepares it for connection. Once entities are identified, they can be turned into nodes in a graph. The relationships — implied or explicit — become edges. Language, once fluid and ambiguous, begins to crystallize into structure. This is the moment where understanding turns into knowledge.",
+            text: "NER doesn't just extract meaning — it prepares it for connection. Once entities are identified, they can be turned into nodes in a graph. The relationships — implied or explicit — become edges. Language, once fluid and ambiguous, begins to crystallize into structure. This is the moment where understanding turns into knowledge.",
           }
         ]
       },
@@ -107,7 +107,7 @@ export const articles = {
         parts: [
           {
             subtitle: "Connecting the Dots",
-            text: "When we link entities together, we move from isolated facts to networks of meaning. These connections — who did what, where, and when — form the basis of a knowledge graph. A knowledge graph doesn’t just store data; it reflects relationships, enables reasoning, and grows dynamically as new information is added.",
+            text: "When we link entities together, we move from isolated facts to networks of meaning. These connections — who did what, where, and when — form the basis of a knowledge graph. A knowledge graph doesn't just store data; it reflects relationships, enables reasoning, and grows dynamically as new information is added.",
           },
           {
             subtitle: "NER as Interface to Knowledge",
@@ -115,7 +115,88 @@ export const articles = {
           },
           {
             subtitle: "The Future of Semantic Design",
-            text: "As we explore the frontiers of AI-augmented systems, the blend of NER and knowledge graphs offers a design paradigm where language and logic coexist. It’s not just about reading text — it’s about interpreting it, modeling it, and navigating its possibilities. In this hybrid space, we stop asking what text says — and start discovering what it knows.",
+            text: "As we explore the frontiers of AI-augmented systems, the blend of NER and knowledge graphs offers a design paradigm where language and logic coexist. It's not just about reading text — it's about interpreting it, modeling it, and navigating its possibilities. In this hybrid space, we stop asking what text says — and start discovering what it knows.",
+          }
+        ]
+      }
+    ]
+  },
+
+  'reverse-proxy-ai-inference': {
+    title: "The Utility of a Reverse Proxy in AI Inference Orchestration",
+    date: "2025-06-23",
+    sections: [
+      {
+        title: "1. Abstracting Model Complexity",
+        parts: [
+          {
+            subtitle: "Unified Entry Point",
+            text: "Modern AI platforms often serve multiple models — for different tasks (e.g., sentiment analysis, summarization, image classification) or different versions (e.g., v1.0 vs. v2.0). A reverse proxy acts as a single entry point, abstracting the underlying model infrastructure. From the client's perspective, it interacts with a unified endpoint (e.g., /api/predict), while internally, the reverse proxy dynamically dispatches the request to the correct backend model. This abstraction fosters modularity and decouples client-side logic from server-side model deployment.",
+          },
+          {
+            subtitle: "Dynamic Request Dispatching",
+            text: "The reverse proxy's ability to route requests based on metadata such as model_id, user tier, or content type enables seamless model switching and version management. This creates a clean separation between the client interface and the complex backend model ecosystem, allowing for independent scaling and deployment of individual model services.",
+          }
+        ]
+      },
+      {
+        title: "2. Centralized Routing and Load Balancing",
+        parts: [
+          {
+            subtitle: "Intelligent Traffic Management",
+            text: "A key utility of the reverse proxy lies in its ability to intelligently route requests. By leveraging metadata such as model_id, user tier, or content type, the proxy can direct traffic to the appropriate inference service. Moreover, when multiple replicas of the same model are deployed (e.g., for GPU-based scaling), the proxy can perform load balancing, ensuring requests are distributed efficiently to minimize latency and maximize throughput. This is particularly crucial in high-load scenarios typical of real-time AI services.",
+          },
+          {
+            subtitle: "Scalability Through Distribution",
+            text: "The load balancing capabilities enable horizontal scaling of model instances, allowing the system to handle varying traffic patterns and maintain consistent performance. This distribution mechanism is essential for production AI systems that must serve thousands of concurrent inference requests while maintaining low latency and high availability.",
+          }
+        ]
+      },
+      {
+        title: "3. Enhanced Observability and Control",
+        parts: [
+          {
+            subtitle: "Centralized Monitoring",
+            text: "Integrating observability into inference systems is essential for operational health. A reverse proxy is an ideal point to instrument metrics, logs, and tracing. Since all traffic passes through the proxy, it can serve as a choke point for real-time analytics, debugging, and monitoring — capturing request volume, response times, model errors, and usage patterns. Additionally, it enables enforcement of security policies, API rate limits, and authentication mechanisms, without modifying the underlying model codebase.",
+          },
+          {
+            subtitle: "Operational Intelligence",
+            text: "The proxy's position as a traffic aggregator provides unprecedented visibility into system behavior. It can detect anomalies, track performance degradation, and provide insights into usage patterns that inform capacity planning and optimization decisions. This operational intelligence is crucial for maintaining reliable AI services in production environments.",
+          }
+        ]
+      },
+      {
+        title: "4. Security and Fault Isolation",
+        parts: [
+          {
+            subtitle: "Network Isolation",
+            text: "Exposing inference servers directly to the public internet can be a security liability. Reverse proxies shield internal model servers from direct access, thus creating a network isolation layer. Furthermore, if a model server crashes or misbehaves, the reverse proxy can handle graceful fallback logic (e.g., retries, default responses, or rerouting), improving system resilience. This separation of concerns strengthens overall fault tolerance.",
+          },
+          {
+            subtitle: "Graceful Degradation",
+            text: "The proxy's ability to implement circuit breakers, retry logic, and fallback mechanisms ensures that individual model failures don't cascade into system-wide outages. This fault isolation is essential for maintaining service reliability in complex AI inference pipelines where multiple models may be serving different aspects of a single request.",
+          }
+        ]
+      },
+      {
+        title: "5. Extensibility in Microservice Architectures",
+        parts: [
+          {
+            subtitle: "Service Orchestration",
+            text: "In microservice-oriented AI systems, each model or capability (e.g., summarizer, sentiment engine, OCR module) can be deployed as an independent service. The reverse proxy serves as the orchestrator across these services, routing requests not only based on paths but also via headers, payloads, or contextual inference data. In more advanced scenarios, the proxy may even support request transformation or conditional logic, evolving into a lightweight inference gateway.",
+          },
+          {
+            subtitle: "Evolving Architecture",
+            text: "As AI systems grow in complexity, the reverse proxy can evolve from a simple router to an intelligent inference gateway. It can implement request transformation, content-based routing, and even lightweight preprocessing or post-processing logic. This evolution enables the proxy to become an active participant in the inference pipeline rather than just a passive traffic director.",
+          }
+        ]
+      },
+      {
+        title: "Conclusion",
+        parts: [
+          {
+            subtitle: "Foundation for Production AI",
+            text: "While often underappreciated, the reverse proxy plays a foundational role in the orchestration of scalable AI inference systems. By abstracting complexity, enabling dynamic routing, enhancing security, and centralizing observability, it transforms a collection of isolated model endpoints into a cohesive, intelligent service layer. As AI platforms such as NOODL evolve to serve diverse inference workflows, the reverse proxy becomes not just a tool of convenience, but a cornerstone of production-grade AI infrastructure.",
           }
         ]
       }
