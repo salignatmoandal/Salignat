@@ -82,7 +82,7 @@ export default function ArticlesPage() {
   const handleArticleClick = (slug: string) => {
     router.push(`/articles/${slug}`)
   }
-
+  // TODO: Add a search bar to search for articles
   return (
     <main className="flex min-h-screen items-center justify-center bg-[var(--background)] px-6">
       <div className="max-w-2xl w-full flex flex-col gap-6">
