@@ -201,6 +201,37 @@ export const articles = {
         ]
       }
     ]
+  }, 
+  'sqs-ai-platform-scaling': {
+    title: "The role of SQS in AI platform scaling",
+    date: "2025-06-23",
+    sections: [
+      {
+        title: "1. The Role of SQS in AI Platform Architecture",
+        parts: [
+          {
+            subtitle: "Decoupling Components with Queues",
+            text: "AI platforms often include multiple microservices: user input collectors, data preprocessors, inference engines, logging pipelines, etc. Directly coupling these services leads to brittle systems. SQS acts as a buffer and communication layer, decoupling services so they can operate independently and asynchronously. For example, when a user submits text for sentiment analysis, the request can be placed on an SQS queue—allowing backend workers to process it at their own pace without blocking the user experience."
+          },
+          {
+            subtitle: "Scaling Inference with Worker Pools", 
+            text: "AI workloads, especially inference with large models, are computationally expensive. SQS enables horizontal scaling of inference workers: each worker polls the queue, processes the task (e.g., generating a response with a transformer model), and returns the result. This architecture ensures that the system can gracefully scale under load while maintaining responsiveness."
+          },
+          {
+            subtitle: "Ensuring Reliability and Resilience",
+            text: "SQS provides message durability and fault tolerance. If a worker crashes during inference, the message can be retried after a visibility timeout. This guarantees that no data is lost and ensures robustness in production environments. Combined with Dead Letter Queues (DLQs), the system can also isolate and debug failed inference tasks without crashing the whole pipeline."
+          }
+        ]
+      },
+      {
+        title: "Conclusion",
+        parts: [
+          {
+            text: "SQS is more than just a queue—it’s a core orchestration tool in AI platforms that demand asynchronous, distributed processing. By enabling decoupled communication, elastic scaling, and fault-tolerant pipelines, it helps AI systems move from experimental scripts to production-grade architectures. In platforms like NOODL, integrating SQS unlocks the ability to process AI tasks at scale, reliably and efficiently.",
+          }
+        ]
+      }
+    ]
   }
 }
 
