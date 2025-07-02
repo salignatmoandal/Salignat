@@ -19,15 +19,15 @@ export default function JournalSection() {
       </div>
       <div className="text-gray-400 text-sm text-justify leading-relaxed flex items-center gap-2">
         <BadgeNew />
-        <span className="text-muted-foreground text-base">Platform Backend · </span>
+        {/* <span className="text-muted-foreground text-base">Platform Backend · </span>
         <div>
           <LinkPreview
-            url="https://gottaphish.com/"
+            // url="https://gottaphish.com/"
             className=" text-lg underline  bg-clip-text text-transparent bg-gradient-to-br from-[#FFa84c] to-[#FFa84c] isStatic"
           >
           Gottapish 
           </LinkPreview>
-        </div>
+        </div> */}
 
       </div>
     </div>
