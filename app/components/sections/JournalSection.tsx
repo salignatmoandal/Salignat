@@ -18,7 +18,7 @@ export default function JournalSection() {
         </div>
       </div>
       <div className="text-gray-400 text-sm text-justify leading-relaxed flex items-center gap-2">
-        <BadgeNew />
+        {/* <BadgeNew /> */}
         {/* <span className="text-muted-foreground text-base">Platform Backend · </span>
         <div>
           <LinkPreview
