@@ -30,9 +30,9 @@ export default function AnimatedArticleSection({
         {
           opacity: 1,
           y: 0,
-          duration: 0.4, // Réduit de 1s à 0.4s
+          duration: 0.3, // Réduit de 1s à 0.4s
           ease: 'power2.out', // Change l'easing pour plus de rapidité
-          delay: index * 0.05, // Réduit le délai de 0.15 à 0.05
+          delay: index * 0.02, // Réduit le délai de 0.15 à 0.05
           scrollTrigger: {
             trigger: el,
             start: 'top 90%', // Déclenche plus tôt (90% au lieu de 85%)
