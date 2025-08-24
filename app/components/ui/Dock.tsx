@@ -13,7 +13,7 @@ const socialLinks = [
   {
     name: 'Twitter',
     icon: <FaTwitter size={20} />,
-    url: 'https://x.com/tracyulme',
+    url: 'https://x.com/whoismawen',
   },
   {
     name: 'LinkedIn',
