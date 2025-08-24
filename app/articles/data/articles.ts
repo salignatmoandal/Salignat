@@ -12,7 +12,7 @@ export const articles = {
             },
             {
               subtitle: "A Graph-Based Approach",
-              text: "Creative thinking is rarely linear. It thrives on associations, spontaneity, and unexpected leaps. Yet, most digital tools impose rigid structures — lists, grids, outlines — that flatten the natural chaos of ideation. This creates friction between how we think and how we're forced to express those thoughts",
+              text: "A graph-based approach to mind-mapping allows for a more natural flow of thought. It allows for the creation of a network of ideas, and the exploration of connections between ideas. It allows for the creation of a network of ideas, and the exploration of connections between ideas.",
             },
             {
               subtitle: "Beyond the Canvas",
