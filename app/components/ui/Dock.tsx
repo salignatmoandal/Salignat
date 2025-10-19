@@ -1,6 +1,6 @@
 'use client'
 
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaTwitter, FaLinkedin, FaMedium } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const socialLinks = [
@@ -19,6 +19,11 @@ const socialLinks = [
     name: 'LinkedIn',
     icon: <FaLinkedin size={20} />,
     url: 'https://www.linkedin.com/in/mawen-salignat-moandal-20943b1ab/',
+  },
+  {
+    name: 'Medium',
+    icon: <FaMedium size={20} />,
+    url: 'https://medium.com/@whoismawen',
   },
 ]
 
